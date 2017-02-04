@@ -1,0 +1,8 @@
+{
+    "descriptorclass":[
+       "NNLTouchID8AuthenticatorDXFactory",
+       "NNLPasscodeAuthenticatorDXFactory",
+       "NNLTouchIDLinkageAuthenticatorDXFactory",
+       "NNLTouchIDNoLinkageAuthenticatorDXFactory"
+    ]
+}

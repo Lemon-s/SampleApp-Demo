@@ -1,0 +1,15 @@
+/*
+ Localizable.strings
+ TestAkcmd
+ 
+ Created by Lyndon on 16/7/26.
+ Copyright © 2016年 lenovo. All rights reserved.
+ */
+"Touch ID Not Enabled"                  =   "_Touch ID Not Enabled";
+"Enable Touch ID and passcode in iOS Settings and try again"   =   "_Enable Touch ID and passcode in iOS Settings and try again.";
+"OK"    =   "_OK";
+"Passcode Not Enabled"                              = "_Passcode Not Enabled";
+"Create passcode in iOS Settings and try again."    =   "_Create passcode in iOS Settings and try again.";
+"Log in to your account."                            =   "_Log in to your account";
+"Link your Touch ID fingerprint to your account."    =   "_Link your Touch ID fingerprint to your account";
+"Link your passcode to your account."                =   "_Link your passcode to your account";

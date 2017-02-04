@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="installViewController">
+            <connections>
+                <outlet property="API" destination="Y6h-MU-etC" id="4gO-qf-tIj"/>
+                <outlet property="connectUrl" destination="ZQ6-mx-f51" id="Sp9-KM-x93"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="链接地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAB-UM-O89">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="McV-oR-ljc"/>
+                        <constraint firstAttribute="width" constant="70" id="yc9-jx-FuE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ6-mx-f51">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="JjR-mh-iNi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V1_API_PREFIX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiR-4z-t57">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Blx-k2-hdZ"/>
+                        <constraint firstAttribute="width" constant="115" id="fSf-El-n1b"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y6h-MU-etC">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="HvT-b3-c9l"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aol-rO-Gfs">
+                    <color key="backgroundColor" red="0.36221155519236548" green="0.62859226191689366" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="Qhp-f4-WuB"/>
+                        <constraint firstAttribute="height" constant="30" id="zWG-et-Mnq"/>
+                    </constraints>
+                    <state key="normal" title="保存"/>
+                    <connections>
+                        <action selector="submitClick:" destination="-1" eventType="touchUpInside" id="Zq4-oB-WyD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DwT-Hs-3Ca">
+                    <frame key="frameInset" minX="156" minY="318" width="62" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="清除缓存"/>
+                    <connections>
+                        <action selector="cleanKeychain:" destination="-1" eventType="touchUpInside" id="uA0-gh-SE7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eiR-4z-t57" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="30u-4M-DqC"/>
+                <constraint firstItem="ZQ6-mx-f51" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="46C-jJ-7vo"/>
+                <constraint firstItem="Y6h-MU-etC" firstAttribute="top" secondItem="eiR-4z-t57" secondAttribute="bottom" constant="10" id="47v-49-Tlu"/>
+                <constraint firstItem="aol-rO-Gfs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="B1h-ns-AtV"/>
+                <constraint firstItem="aol-rO-Gfs" firstAttribute="top" secondItem="Y6h-MU-etC" secondAttribute="bottom" constant="50" id="KZb-DC-fXy"/>
+                <constraint firstItem="zAB-UM-O89" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="MLn-pw-e89"/>
+                <constraint firstItem="ZQ6-mx-f51" firstAttribute="top" secondItem="zAB-UM-O89" secondAttribute="bottom" constant="10" id="Pg2-oj-del"/>
+                <constraint firstItem="eiR-4z-t57" firstAttribute="top" secondItem="ZQ6-mx-f51" secondAttribute="bottom" constant="10" id="She-xy-WHD"/>
+                <constraint firstItem="zAB-UM-O89" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="eb0-eU-w1b"/>
+                <constraint firstAttribute="trailing" secondItem="ZQ6-mx-f51" secondAttribute="trailing" constant="10" id="nIo-Mc-K1e"/>
+                <constraint firstItem="Y6h-MU-etC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="oFn-Yt-hOL"/>
+                <constraint firstAttribute="trailing" secondItem="Y6h-MU-etC" secondAttribute="trailing" constant="10" id="rz2-t4-2Ws"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "usr/cal/gmrz_jv_ecc_cal_ext.m"
+            timestampString = "506781149.126793"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "316"
+            endingLineNumber = "316"
+            landmarkName = "-useKeyAsyncSign:pubId:trancationtext:serviceId:accountId:digestData:digestLength:signature:signatureLength:method:methods:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "usr/cal/gmrz_jv_ecc_cal_ext.m"
+            timestampString = "506781149.126793"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "365"
+            endingLineNumber = "365"
+            landmarkName = "-useKeyAsyncVerify:pubId:digestData:digestLength:signature:signatureLength:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "usr/cal/gmrz_jv_ecc_cal_ext.m"
+            timestampString = "506781149.126793"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "329"
+            endingLineNumber = "329"
+            landmarkName = "-useKeyAsyncSign:pubId:trancationtext:serviceId:accountId:digestData:digestLength:signature:signatureLength:method:methods:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[gmrz_jv_ecc_cal_ext useKeyAsyncSign:pubId:trancationtext:serviceId:accountId:digestData:digestLength:signature:signatureLength:method:methods:]"
+                  moduleName = "FIDOPro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Lyndon/Downloads/SampleApp%E6%BA%90%E7%A0%81/usr/cal/gmrz_jv_ecc_cal_ext.m"
+                  timestampString = "506771237.773095"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "329"
+                  endingLineNumber = "329"
+                  offsetFromSymbolStart = "2088">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__145-[gmrz_jv_ecc_cal_ext useKeyAsyncSign:pubId:trancationtext:serviceId:accountId:digestData:digestLength:signature:signatureLength:method:methods:]_block_invoke"
+                  moduleName = "FIDOPro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Lyndon/Downloads/SampleApp%E6%BA%90%E7%A0%81/usr/cal/gmrz_jv_ecc_cal_ext.m"
+                  timestampString = "506771237.774537"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "329"
+                  endingLineNumber = "329"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "usr/cal/gmrz_jv_ecc_cal_ext.m"
+            timestampString = "506781149.126793"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "339"
+            endingLineNumber = "339"
+            landmarkName = "-useKeyAsyncSign:pubId:trancationtext:serviceId:accountId:digestData:digestLength:signature:signatureLength:method:methods:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "usr/cal/gmrz_jv_ecc_cal_ext.m"
+            timestampString = "506781149.126793"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "310"
+            endingLineNumber = "310"
+            landmarkName = "-useKeyAsyncSign:pubId:trancationtext:serviceId:accountId:digestData:digestLength:signature:signatureLength:method:methods:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "usr/cal/gmrz_jv_ecc_cal_ext.m"
+            timestampString = "506781149.126793"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "341"
+            endingLineNumber = "341"
+            landmarkName = "-useKeyAsyncSign:pubId:trancationtext:serviceId:accountId:digestData:digestLength:signature:signatureLength:method:methods:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "usr/cal/gmrz_jv_ecc_cal_ext.m"
+            timestampString = "506781149.126793"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "361"
+            endingLineNumber = "361"
+            landmarkName = "-useKeyAsyncSign:pubId:trancationtext:serviceId:accountId:digestData:digestLength:signature:signatureLength:method:methods:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
