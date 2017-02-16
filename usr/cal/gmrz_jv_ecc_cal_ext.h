@@ -38,7 +38,7 @@
 
 
 
-//new cal lay function
+//new keypair generator
 
 -(OSStatus)generateKeyAsync :(NSString *)priId
                        pubId:(NSString *)pubId

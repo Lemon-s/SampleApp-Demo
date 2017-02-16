@@ -37,6 +37,8 @@
 @property (nonatomic, strong) NSData * symmetricTag;
 @property (nonatomic, strong) NSData * symmetricKeyRef;
 
+// old no use
+
 //ecc keypair generation function
 - (BOOL)generateKeyPair:(NSUInteger)keySize ;
 - (NSData *)getPublicKeyBits;
@@ -73,7 +75,7 @@
 
 //new cal lay function
 
-
+//old no use too
 
 - (NSString *) generateECPair:(nonnull NSString*) serviceID
                    sizeInBits:(nonnull NSNumber*)sizeInBits
@@ -101,6 +103,8 @@
 
 
 //new cal lay function
+
+//old no use too too
 
 -(OSStatus)generateKeyAsync :(NSString *)priId pubId:(NSString *)pubId;
 

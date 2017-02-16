@@ -624,19 +624,28 @@ char *gmrz_base64_decode(const unsigned char* data, int data_len)
     
     
     NSError *error;
-    BOOL success = false;
+    
+    BOOL success = NO;
+    
     LAContext *context = [[LAContext alloc] init];
     
-    if (SystemVersion > 9.3) {
-        // test if we can evaluate the policy, this test will tell us if Touch ID is available and enrolled
-        success = [context canEvaluatePolicy: LAPolicyDeviceOwnerAuthentication error:&error];
-        
+    success = [context canEvaluatePolicy: LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error];
+    
+    
+    if (error.code == -8) {
+        //设备没有设置touchid
+        success = YES;
+        return success;
     }
-    else{
-        // test if we can evaluate the policy, this test will tell us if Touch ID is available and enrolled
-        success = [context canEvaluatePolicy: LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error];
+    
+    if (error.code == -7) {
+        //设备锁死
+        success = NO;
+        return success;
     }
-  
+    if (error.code == -6){
+        //此处为设备不支持
+    }
     
     return success;
 }

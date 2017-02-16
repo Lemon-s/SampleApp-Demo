@@ -14,7 +14,7 @@
 #include "uaf_ak_defs.h"
 #import "uaf_ak_tlv.h"
 #include "uaf_ak_register_cmd.h"
-#include "gmrz_jv_ecc_cal.h"
+//#include "gmrz_jv_ecc_cal.h" //no use any more
 #include "gmrz_jv_ecc_cal_ext.h"
 #include "gmrz_jv_asm_json_parse.h"
 #include "gmrz_jv_asm_KHAccessToken.h"

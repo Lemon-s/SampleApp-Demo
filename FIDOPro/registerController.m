@@ -55,7 +55,6 @@ extern HttpConnection* gHttpConnection;
     password = [[UITextField alloc]initWithFrame:CGRectMake(0,SIZE.height/4+50, SIZE.width, 40)];
     NSArray *user = @[username,password];
 
-
     
     for (int i =0; i < plahold.count; i++) {
         UITextField *tf = user[i];

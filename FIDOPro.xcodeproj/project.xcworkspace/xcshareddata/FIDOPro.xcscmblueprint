@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7144d1ce-e8e0-451d-ba19-4f0aa17bb72d++2644",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "7144d1ce-e8e0-451d-ba19-4f0aa17bb72d++2644" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7144d1ce-e8e0-451d-ba19-4f0aa17bb72d++2644" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "68563374-35E9-4963-A5EF-BCAE303D7DA3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7144d1ce-e8e0-451d-ba19-4f0aa17bb72d++2644" : "Product_IOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FIDOPro",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SampleApp\/SampleApp2017-02-08\/FIDOPro.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.6.151:18080\/svn\/JVProject",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7144d1ce-e8e0-451d-ba19-4f0aa17bb72d++2644"
+    }
+  ]
+}
