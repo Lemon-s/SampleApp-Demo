@@ -114,7 +114,10 @@
 
 
 //AES key ENC&DEC function
+//no use any more
 - (NSData *)aes256_encrypt:(NSString *)key SourceData:(NSData *)SourceData;
+
+//
 - (size_t)aes256_encrypt_ext:(uint8_t *)SourceData  //加密
             SourceDataLength:(uint8_t)SourceDataLength
                      dstData:(uint8_t **)dstData

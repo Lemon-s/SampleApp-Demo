@@ -516,6 +516,7 @@ finalize:
     if (NULL != hashcopy)
     {
         free(hashcopy);
+        hashcopy = NULL;
     }
     
 

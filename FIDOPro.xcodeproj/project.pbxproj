@@ -53,16 +53,12 @@
 		A319C3D91E557B00004716C9 /* ak_uvt.c in Sources */ = {isa = PBXBuildFile; fileRef = A319C3AD1E557B00004716C9 /* ak_uvt.c */; };
 		A319C3DA1E557B00004716C9 /* gmrz_jv_asm_json_parse.m in Sources */ = {isa = PBXBuildFile; fileRef = A319C3B11E557B00004716C9 /* gmrz_jv_asm_json_parse.m */; };
 		A319C3DB1E557B00004716C9 /* gmrz_jv_asm_KHAccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = A319C3B41E557B00004716C9 /* gmrz_jv_asm_KHAccessToken.m */; };
-		A319C3DC1E557B00004716C9 /* gmrz_jv_asm_regeister.m in Sources */ = {isa = PBXBuildFile; fileRef = A319C3B61E557B00004716C9 /* gmrz_jv_asm_regeister.m */; };
 		A319C3DD1E557B00004716C9 /* gmrz_jv_asm_db.m in Sources */ = {isa = PBXBuildFile; fileRef = A319C3B91E557B00004716C9 /* gmrz_jv_asm_db.m */; };
-		A319C3DE1E557B00004716C9 /* gmrz_reg_name.m in Sources */ = {isa = PBXBuildFile; fileRef = A319C3BB1E557B00004716C9 /* gmrz_reg_name.m */; };
 		A319C3E01E557B00004716C9 /* gmrz_jv_ecc_cal_ext.m in Sources */ = {isa = PBXBuildFile; fileRef = A319C3C01E557B00004716C9 /* gmrz_jv_ecc_cal_ext.m */; };
 		A319C3E11E557B00004716C9 /* gmrz_client_getfinalchallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = A319C3C31E557B00004716C9 /* gmrz_client_getfinalchallenge.m */; };
 		A319C3E21E557B00004716C9 /* gmrz_client_interface.m in Sources */ = {isa = PBXBuildFile; fileRef = A319C3C51E557B00004716C9 /* gmrz_client_interface.m */; };
 		A319C3E31E557B00004716C9 /* authticatorlistshow.m in Sources */ = {isa = PBXBuildFile; fileRef = A319C3C81E557B00004716C9 /* authticatorlistshow.m */; };
 		A319C3E41E557B00004716C9 /* gmrz_json_pkg.m in Sources */ = {isa = PBXBuildFile; fileRef = A319C3CA1E557B00004716C9 /* gmrz_json_pkg.m */; };
-		A319C3E51E557B00004716C9 /* modelAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = A319C3CC1E557B00004716C9 /* modelAlert.m */; };
-		A319C3E61E557B00004716C9 /* PickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A319C3CE1E557B00004716C9 /* PickerView.m */; };
 		A319C3E71E557B00004716C9 /* gmrz_jv_util_func.m in Sources */ = {isa = PBXBuildFile; fileRef = A319C3D11E557B00004716C9 /* gmrz_jv_util_func.m */; };
 /* End PBXBuildFile section */
 
@@ -150,12 +146,8 @@
 		A319C3B11E557B00004716C9 /* gmrz_jv_asm_json_parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gmrz_jv_asm_json_parse.m; sourceTree = "<group>"; };
 		A319C3B31E557B00004716C9 /* gmrz_jv_asm_KHAccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmrz_jv_asm_KHAccessToken.h; sourceTree = "<group>"; };
 		A319C3B41E557B00004716C9 /* gmrz_jv_asm_KHAccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gmrz_jv_asm_KHAccessToken.m; sourceTree = "<group>"; };
-		A319C3B51E557B00004716C9 /* gmrz_jv_asm_regeister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmrz_jv_asm_regeister.h; sourceTree = "<group>"; };
-		A319C3B61E557B00004716C9 /* gmrz_jv_asm_regeister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gmrz_jv_asm_regeister.m; sourceTree = "<group>"; };
 		A319C3B81E557B00004716C9 /* gmrz_jv_asm_db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmrz_jv_asm_db.h; sourceTree = "<group>"; };
 		A319C3B91E557B00004716C9 /* gmrz_jv_asm_db.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gmrz_jv_asm_db.m; sourceTree = "<group>"; };
-		A319C3BA1E557B00004716C9 /* gmrz_reg_name.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmrz_reg_name.h; sourceTree = "<group>"; };
-		A319C3BB1E557B00004716C9 /* gmrz_reg_name.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gmrz_reg_name.m; sourceTree = "<group>"; };
 		A319C3BF1E557B00004716C9 /* gmrz_jv_ecc_cal_ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmrz_jv_ecc_cal_ext.h; sourceTree = "<group>"; };
 		A319C3C01E557B00004716C9 /* gmrz_jv_ecc_cal_ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gmrz_jv_ecc_cal_ext.m; sourceTree = "<group>"; };
 		A319C3C21E557B00004716C9 /* gmrz_client_getfinalchallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmrz_client_getfinalchallenge.h; sourceTree = "<group>"; };
@@ -166,10 +158,6 @@
 		A319C3C81E557B00004716C9 /* authticatorlistshow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = authticatorlistshow.m; sourceTree = "<group>"; };
 		A319C3C91E557B00004716C9 /* gmrz_json_pkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmrz_json_pkg.h; sourceTree = "<group>"; };
 		A319C3CA1E557B00004716C9 /* gmrz_json_pkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gmrz_json_pkg.m; sourceTree = "<group>"; };
-		A319C3CB1E557B00004716C9 /* modelAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelAlert.h; sourceTree = "<group>"; };
-		A319C3CC1E557B00004716C9 /* modelAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = modelAlert.m; sourceTree = "<group>"; };
-		A319C3CD1E557B00004716C9 /* PickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerView.h; sourceTree = "<group>"; };
-		A319C3CE1E557B00004716C9 /* PickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerView.m; sourceTree = "<group>"; };
 		A319C3D01E557B00004716C9 /* gmrz_jv_util_func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmrz_jv_util_func.h; sourceTree = "<group>"; };
 		A319C3D11E557B00004716C9 /* gmrz_jv_util_func.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gmrz_jv_util_func.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -357,8 +345,6 @@
 				A319C3AF1E557B00004716C9 /* amd_parsejson */,
 				A319C3B21E557B00004716C9 /* asm_cmd */,
 				A319C3B71E557B00004716C9 /* asm_db */,
-				A319C3BA1E557B00004716C9 /* gmrz_reg_name.h */,
-				A319C3BB1E557B00004716C9 /* gmrz_reg_name.m */,
 			);
 			path = asm;
 			sourceTree = "<group>";
@@ -377,8 +363,6 @@
 			children = (
 				A319C3B31E557B00004716C9 /* gmrz_jv_asm_KHAccessToken.h */,
 				A319C3B41E557B00004716C9 /* gmrz_jv_asm_KHAccessToken.m */,
-				A319C3B51E557B00004716C9 /* gmrz_jv_asm_regeister.h */,
-				A319C3B61E557B00004716C9 /* gmrz_jv_asm_regeister.m */,
 			);
 			path = asm_cmd;
 			sourceTree = "<group>";
@@ -420,10 +404,6 @@
 				A319C3C81E557B00004716C9 /* authticatorlistshow.m */,
 				A319C3C91E557B00004716C9 /* gmrz_json_pkg.h */,
 				A319C3CA1E557B00004716C9 /* gmrz_json_pkg.m */,
-				A319C3CB1E557B00004716C9 /* modelAlert.h */,
-				A319C3CC1E557B00004716C9 /* modelAlert.m */,
-				A319C3CD1E557B00004716C9 /* PickerView.h */,
-				A319C3CE1E557B00004716C9 /* PickerView.m */,
 			);
 			path = json;
 			sourceTree = "<group>";
@@ -532,7 +512,6 @@
 				A319C3D71E557B00004716C9 /* ak_token_verifier.m in Sources */,
 				A319C3D61E557B00004716C9 /* ak_tlv.c in Sources */,
 				A319C3DD1E557B00004716C9 /* gmrz_jv_asm_db.m in Sources */,
-				A319C3DE1E557B00004716C9 /* gmrz_reg_name.m in Sources */,
 				A319C3D91E557B00004716C9 /* ak_uvt.c in Sources */,
 				69059C281D50474B00CA9211 /* HttpConnection.mm in Sources */,
 				6907EE341D3725AD00D7A94A /* registerController.m in Sources */,
@@ -544,10 +523,8 @@
 				A319C3E41E557B00004716C9 /* gmrz_json_pkg.m in Sources */,
 				6907EE391D3725AD00D7A94A /* ShoppingCart.m in Sources */,
 				6907EE421D37260D00D7A94A /* MainViewController.m in Sources */,
-				A319C3E51E557B00004716C9 /* modelAlert.m in Sources */,
 				6907EE3B1D3725AD00D7A94A /* validateViewController.m in Sources */,
 				A319C3D31E557B00004716C9 /* ak_keyhandle.m in Sources */,
-				A319C3DC1E557B00004716C9 /* gmrz_jv_asm_regeister.m in Sources */,
 				A319C3E01E557B00004716C9 /* gmrz_jv_ecc_cal_ext.m in Sources */,
 				A319C3D21E557B00004716C9 /* ak_getinfo.m in Sources */,
 				A319C3E31E557B00004716C9 /* authticatorlistshow.m in Sources */,
@@ -561,7 +538,6 @@
 				A319C3D51E557B00004716C9 /* ak_sign_cmd.m in Sources */,
 				6907EE101D37258D00D7A94A /* main.m in Sources */,
 				6969E7B11D59DE0C0017736D /* MBProgressHUD.m in Sources */,
-				A319C3E61E557B00004716C9 /* PickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

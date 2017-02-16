@@ -10,7 +10,7 @@
 
 @interface gmrz_jv_asm_db : NSObject
 
-+ (OSStatus)gmrz_jv_asm_DBin:(NSString *)serviceId
++ (OSStatus)gmrz_jv_asm_DB_Add:(NSString *)serviceId
                    counterIn:(NSString *)counterIn
                    DB_dataIn:(NSString *)DB_dataIn;
 
@@ -22,7 +22,4 @@
 + (OSStatus)gmrz_jv_asm_DB_Delete:(NSString *)serviceId
                         counterIn:(NSString *)counterIn;
 
-+ (void)gmrz_jv_addSignCounter:(NSString *)SignCounter;
-+ (NSString *)gmrz_jv_suchSignCounter:(NSString *)SignCounter;
-+ (void)gmrz_jv_changeSignCounter:(NSString *)SignCounter;
 @end

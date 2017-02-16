@@ -46,7 +46,7 @@ ak_result_t AuthenticatorInfoInit(authenticatorInfo_t** pAKInfo, ak_result_t * c
 
     //init scheme
     memcpy((ak_byte_t *)(*pAKInfo[*count]).scheme, "UAFV1TLV", ASSERTION_SCHEME_SIZE);
-    (*pAKInfo[*count]).attestationType = 0x3E08;
+    (*pAKInfo[*count]).attestationType = TAG_ATTESTATION_BASIC_SURROGATE;
     
     (*count)++;
     
@@ -69,7 +69,7 @@ ak_result_t AuthenticatorInfoInit(authenticatorInfo_t** pAKInfo, ak_result_t * c
     
     //init scheme
     memcpy((ak_byte_t *)(*pAKInfo[*count]).scheme, "UAFV1TLV", sizeof(ASSERTION_SCHEME_SIZE));
-    (*pAKInfo[*count]).attestationType = 0x3E08;
+    (*pAKInfo[*count]).attestationType = TAG_ATTESTATION_BASIC_SURROGATE;
     
     (*count)++;
     
@@ -90,7 +90,7 @@ ak_result_t AuthenticatorInfoInit(authenticatorInfo_t** pAKInfo, ak_result_t * c
     
     //init scheme
     memcpy((ak_byte_t *)(*pAKInfo[*count]).scheme, "UAFV1TLV", sizeof(ASSERTION_SCHEME_SIZE));
-    (*pAKInfo[*count]).attestationType = 0x3E08;
+    (*pAKInfo[*count]).attestationType = TAG_ATTESTATION_BASIC_SURROGATE;
     
     (*count)++;
     
@@ -111,7 +111,7 @@ ak_result_t AuthenticatorInfoInit(authenticatorInfo_t** pAKInfo, ak_result_t * c
     
     //init scheme
     memcpy((ak_byte_t *)(*pAKInfo[*count]).scheme, "UAFV1TLV", sizeof(ASSERTION_SCHEME_SIZE));
-    (*pAKInfo[*count]).attestationType = 0x3E08;
+    (*pAKInfo[*count]).attestationType = TAG_ATTESTATION_BASIC_SURROGATE;
     
     (*count)++;
     

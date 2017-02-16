@@ -15,12 +15,7 @@
 @interface gmrz_jv_asm_KHAccessToken : NSObject
 
 
-
-
-
 +(NSInteger) getKHAccessToken:(unsigned char **) KHAccessData  jsonin:(NSString *)jsonin;
-
-+(NSString *) getBundleId;
 
 
 @end

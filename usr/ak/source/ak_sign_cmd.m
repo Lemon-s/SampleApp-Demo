@@ -521,7 +521,7 @@ ak_result_t CreateUAFV1SignResponse(signResponseArgs_t* pArgs,
         
         NSString *dataIn = nil;
         if ([gmrz_jv_asm_db gmrz_jv_asm_DB_Query:@"signCounter" counterIn:@"signCounter" DB_dataIn:&dataIn] == errSecItemNotFound) {
-            [gmrz_jv_asm_db gmrz_jv_asm_DBin:@"signCounter" counterIn:@"signCounter" DB_dataIn:@"2"];
+            [gmrz_jv_asm_db gmrz_jv_asm_DB_Add:@"signCounter" counterIn:@"signCounter" DB_dataIn:@"2"];
         }
         NSString * signCounter = nil;
         NSInteger  state =  [gmrz_jv_asm_db gmrz_jv_asm_DB_Query:@"signCounter" counterIn:@"signCounter" DB_dataIn:&signCounter];
@@ -535,7 +535,7 @@ ak_result_t CreateUAFV1SignResponse(signResponseArgs_t* pArgs,
         
         
         sign++;
-        [gmrz_jv_asm_db gmrz_jv_asm_DBin:@"signCounter" counterIn:@"signCounter" DB_dataIn:[NSString stringWithFormat:@"%d",sign]];
+        [gmrz_jv_asm_db gmrz_jv_asm_DB_Add:@"signCounter" counterIn:@"signCounter" DB_dataIn:[NSString stringWithFormat:@"%d",sign]];
 
         
 		/* Calculate SignData signature size */

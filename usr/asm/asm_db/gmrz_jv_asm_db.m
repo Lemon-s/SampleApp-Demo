@@ -11,7 +11,7 @@
 @implementation gmrz_jv_asm_db
 
 
-+ (OSStatus)gmrz_jv_asm_DBin:(NSString *)serviceId
++ (OSStatus)gmrz_jv_asm_DB_Add:(NSString *)serviceId
                    counterIn:(NSString *)counterIn
                    DB_dataIn:(NSString *)DB_dataIn
 {
@@ -48,12 +48,6 @@
   
     return status;
 }
-
-
-
-
-
-
 
 
 + (OSStatus)gmrz_jv_asm_DB_Query:(NSString *)serviceId
@@ -114,6 +108,7 @@
      status = SecItemDelete((__bridge CFDictionaryRef)query);
     
     NSString *errorString = [self keychainErrorToString:status];
+    
     message = [NSString stringWithFormat:@"SecItemDelete status: %@", errorString];
 
     return status;

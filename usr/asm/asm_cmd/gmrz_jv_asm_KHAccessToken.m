@@ -7,7 +7,6 @@
 //
 
 #import "gmrz_jv_asm_KHAccessToken.h"
-
 #import "gmrz_jv_asm_json_parse.h"
 #import "gmrz_jv_ecc_cal_ext.h"
 
@@ -48,7 +47,7 @@
     
     
     //callerID
-    HKAccess = [ HKAccess stringByAppendingString:[self getBundleId]];
+    HKAccess = [ HKAccess stringByAppendingString:[[NSBundle mainBundle] bundleIdentifier]];
     
     memset(ramdstr, 0x0, sizeof(ramdstr));
     memcpy(ramdstr, asmtokenhash, 32);
@@ -75,12 +74,6 @@
     
 
     return KHACCESSTOKEN_CAL_SUCCESS;
-}
-
-
-+(NSString *) getBundleId
-{
-    return [[NSBundle mainBundle] bundleIdentifier];
 }
 
 
