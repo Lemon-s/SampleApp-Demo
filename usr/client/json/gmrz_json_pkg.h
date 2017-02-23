@@ -12,7 +12,8 @@
 
 @interface gmrz_json_pkg : NSObject
 
-+(NSInteger )gmrz_parse_json:(NSString *)JsonPullin dicOut:(NSDictionary **)dicOut;
+//+(NSInteger )gmrz_parse_json:(NSString *)JsonPullin dicOut:(NSDictionary **)dicOut;
+
 +(NSInteger )gmrz_pkg_json_finalchallage:(NSString *)appID
                                challenge:(NSString *)challenge
                            finalchallage:(NSString ** ) finalchallage;

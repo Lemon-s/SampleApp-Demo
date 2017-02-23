@@ -16,10 +16,10 @@ ak_result_t AuthenticatorInfoInit(authenticatorInfo_t** pAKInfo,
 
 
 
-ak_result_t GetInfo(authenticatorInfo_t *pAKInfo,
-                    input_args_t *pInputArgs,
-                    ak_byte_t *pResponse,
-                    ak_word_t *pResponseLength);
+//ak_result_t GetInfo(authenticatorInfo_t *pAKInfo,
+//                    input_args_t *pInputArgs,
+//                    ak_byte_t *pResponse,
+//                    ak_word_t *pResponseLength);
 
 
 ak_result_t GetInfoExt(authenticatorInfo_t *pAKInfo[32],

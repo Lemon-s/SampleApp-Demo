@@ -8,6 +8,7 @@
 
 #import "gmrz_json_pkg.h"
 #import "gmrz_client_getfinalchallenge.h"
+#import "uaf_ak_defs.h"
 
 #define PARSEJSONDATA_SUCCESS 0
 #define PARSEJSONDATA_FAILD -1020
@@ -17,27 +18,27 @@
 @implementation gmrz_json_pkg
 
 
-+(NSInteger )gmrz_parse_json:(NSString *)JsonPullin dicOut:(NSDictionary **)dicOut
-{
-
-    if (JsonPullin == nil) {
-        return PARSEJSONDATA_FAILD;
-    }
-    
-    NSData *jsonData = [JsonPullin dataUsingEncoding:NSUTF8StringEncoding];
-    NSError *err;
-    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
-                                                        options:NSJSONReadingMutableContainers
-                                                          error:&err];
-    *dicOut = [dic copy];
-  
-    if(err) {
-        NSLog(@"json解析失败：%@",err);
-        return PARSEJSONDATA_FAILD;
-    }
-    
-    return PARSEJSONDATA_SUCCESS;
-}
+//+(NSInteger )gmrz_parse_json:(NSString *)JsonPullin dicOut:(NSDictionary **)dicOut
+//{
+//
+//    if (JsonPullin == nil) {
+//        return PARSEJSONDATA_FAILD;
+//    }
+//    
+//    NSData *jsonData = [JsonPullin dataUsingEncoding:NSUTF8StringEncoding];
+//    NSError *err;
+//    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
+//                                                        options:NSJSONReadingMutableContainers
+//                                                          error:&err];
+//    *dicOut = [dic copy];
+//  
+//    if(err) {
+//        NSLog(@"json解析失败：%@",err);
+//        return PARSEJSONDATA_FAILD;
+//    }
+//    
+//    return PARSEJSONDATA_SUCCESS;
+//}
 
 
 +(NSInteger )gmrz_pkg_json_finalchallage:(NSString *)appID
@@ -229,7 +230,7 @@
     [args setObject:username forKey:@"username"];
      status = [gmrz_client_getfinalchallenge getFanilchallage:appID challenge:challenge finalchallage:&finalchallage];
     [args setObject:finalchallage forKey:@"finalChallenge"];
-    [args setValue:@15880 forKey:@"attestationType"];
+    [args setValue:[NSNumber numberWithLong:TAG_ATTESTATION_BASIC_SURROGATE] forKey:@"attestationType"];
 
     
     [asmVersion setObject:upv forKey:@"asmVersion"];

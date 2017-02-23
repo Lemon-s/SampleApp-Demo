@@ -36,20 +36,14 @@ extern HttpConnection* gHttpConnection;
         [self reloadData];
         
     }
-    
-    
-
-
 
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
- 
     
     mAuthList = [[NSMutableArray alloc]init];
     
-
     
 }
 - (void)reloadData {
@@ -78,9 +72,6 @@ extern HttpConnection* gHttpConnection;
     [value   setObject:[[NSUserDefaults standardUserDefaults] objectForKey:@"username"] forKey:@USER_NAME];
     [value   setObject:@"default"          forKey:@POLICY_NAME];
     [payload setObject:value               forKey:@CONTEXT];
-    
-    
-    
     
     
     NSError* error;
@@ -173,11 +164,9 @@ extern HttpConnection* gHttpConnection;
 
     }
     
-        
-    
+
     });
 
-    
 }
 
 
@@ -252,7 +241,7 @@ extern HttpConnection* gHttpConnection;
             
             if( 1200 == statusCode )
             {
-                
+                NSLog(@"deregiter response is %@", response);
                 
                 NSString *JsonOuttext = nil;
                 int status =   [gmrz_client_interface process:response DoFido:gmrz_deregister Methods:gmrz_default FidoOut:&JsonOuttext];

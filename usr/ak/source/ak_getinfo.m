@@ -36,13 +36,13 @@ ak_result_t AuthenticatorInfoInit(authenticatorInfo_t** pAKInfo, ak_result_t * c
     memcpy((ak_byte_t *)(*pAKInfo[*count]).aaid, "4e4e#4005", AAID_SIZE);
     
     //init metadata
-    (*pAKInfo[*count]).metadata.authenticatorType = 0;
+    (*pAKInfo[*count]).metadata.authenticatorType = UAF_TYPE_BASIC_AUTHNR;
     (*pAKInfo[*count]).metadata.maxKeyHandle = 0x01;
-    (*pAKInfo[*count]).metadata.userVerification = 0x00000001;
-    (*pAKInfo[*count]).metadata.keyProtection = 0x0002;
-    (*pAKInfo[*count]).metadata.matcherProtection = 0x0002;
-    (*pAKInfo[*count]).metadata.tcDisplay = 0x0001;
-    (*pAKInfo[*count]).metadata.authenticationAlg = 0x0001;
+    (*pAKInfo[*count]).metadata.userVerification = USER_VERIFY_PRESENCE;
+    (*pAKInfo[*count]).metadata.keyProtection = KEY_PROTECTION_HARDWARE;
+    (*pAKInfo[*count]).metadata.matcherProtection = MATCHER_PROTECTION_TEE;
+    (*pAKInfo[*count]).metadata.tcDisplay = TC_DISPLAY_ANY;
+    (*pAKInfo[*count]).metadata.authenticationAlg = UAF_ALG_SIGN_SECP256R1_ECDSA_SHA256_RAW;
 
     //init scheme
     memcpy((ak_byte_t *)(*pAKInfo[*count]).scheme, "UAFV1TLV", ASSERTION_SCHEME_SIZE);
@@ -59,13 +59,13 @@ ak_result_t AuthenticatorInfoInit(authenticatorInfo_t** pAKInfo, ak_result_t * c
     memcpy((ak_byte_t *)(*pAKInfo[*count]).aaid, "4e4e#400a", AAID_SIZE);
     
     //init metadata
-    (*pAKInfo[*count]).metadata.authenticatorType = 0;
+    (*pAKInfo[*count]).metadata.authenticatorType = UAF_TYPE_BASIC_AUTHNR;
     (*pAKInfo[*count]).metadata.maxKeyHandle = 0x01;
-    (*pAKInfo[*count]).metadata.userVerification = 0x00000001;
-    (*pAKInfo[*count]).metadata.keyProtection = 0x0008;
-    (*pAKInfo[*count]).metadata.matcherProtection = 0x0004;
-    (*pAKInfo[*count]).metadata.tcDisplay = 0x00001;
-    (*pAKInfo[*count]).metadata.authenticationAlg = 0x0001;
+    (*pAKInfo[*count]).metadata.userVerification = USER_VERIFY_PRESENCE;
+    (*pAKInfo[*count]).metadata.keyProtection = KEY_PROTECTION_SECURE_ELEMENT;
+    (*pAKInfo[*count]).metadata.matcherProtection = MATCHER_PROTECTION_ON_CHIP;
+    (*pAKInfo[*count]).metadata.tcDisplay = TC_DISPLAY_ANY;
+    (*pAKInfo[*count]).metadata.authenticationAlg = UAF_ALG_SIGN_SECP256R1_ECDSA_SHA256_RAW;
     
     //init scheme
     memcpy((ak_byte_t *)(*pAKInfo[*count]).scheme, "UAFV1TLV", sizeof(ASSERTION_SCHEME_SIZE));
@@ -80,13 +80,13 @@ ak_result_t AuthenticatorInfoInit(authenticatorInfo_t** pAKInfo, ak_result_t * c
     memcpy((ak_byte_t *)(*pAKInfo[*count]).aaid, "4e4e#400b", AAID_SIZE);
     
     //init metadata
-    (*pAKInfo[*count]).metadata.authenticatorType = 0;
+    (*pAKInfo[*count]).metadata.authenticatorType = UAF_TYPE_BASIC_AUTHNR;
     (*pAKInfo[*count]).metadata.maxKeyHandle = 0x01;
-    (*pAKInfo[*count]).metadata.userVerification = 0x00000001;
-    (*pAKInfo[*count]).metadata.keyProtection = 0x0008;
-    (*pAKInfo[*count]).metadata.matcherProtection = 0x0004;
-    (*pAKInfo[*count]).metadata.tcDisplay = 0x00001;
-    (*pAKInfo[*count]).metadata.authenticationAlg = 0x0001;
+    (*pAKInfo[*count]).metadata.userVerification = USER_VERIFY_PRESENCE;
+    (*pAKInfo[*count]).metadata.keyProtection = KEY_PROTECTION_SECURE_ELEMENT;
+    (*pAKInfo[*count]).metadata.matcherProtection = MATCHER_PROTECTION_ON_CHIP;
+    (*pAKInfo[*count]).metadata.tcDisplay = TC_DISPLAY_ANY;
+    (*pAKInfo[*count]).metadata.authenticationAlg = UAF_ALG_SIGN_SECP256R1_ECDSA_SHA256_RAW;
     
     //init scheme
     memcpy((ak_byte_t *)(*pAKInfo[*count]).scheme, "UAFV1TLV", sizeof(ASSERTION_SCHEME_SIZE));
@@ -101,13 +101,13 @@ ak_result_t AuthenticatorInfoInit(authenticatorInfo_t** pAKInfo, ak_result_t * c
     memcpy((ak_byte_t *)(*pAKInfo[*count]).aaid, "4e4e#4009", AAID_SIZE);
     
     //init metadata
-    (*pAKInfo[*count]).metadata.authenticatorType = 0;
+    (*pAKInfo[*count]).metadata.authenticatorType = UAF_TYPE_BASIC_AUTHNR;
     (*pAKInfo[*count]).metadata.maxKeyHandle = 0x01;
-    (*pAKInfo[*count]).metadata.userVerification = 0x00000001;
-    (*pAKInfo[*count]).metadata.keyProtection = 0x0008;
-    (*pAKInfo[*count]).metadata.matcherProtection = 0x0004;
-    (*pAKInfo[*count]).metadata.tcDisplay = 0x00001;
-    (*pAKInfo[*count]).metadata.authenticationAlg = 0x0001;
+    (*pAKInfo[*count]).metadata.userVerification = USER_VERIFY_PRESENCE;
+    (*pAKInfo[*count]).metadata.keyProtection = KEY_PROTECTION_SECURE_ELEMENT;
+    (*pAKInfo[*count]).metadata.matcherProtection = MATCHER_PROTECTION_ON_CHIP;
+    (*pAKInfo[*count]).metadata.tcDisplay = TC_DISPLAY_ANY;
+    (*pAKInfo[*count]).metadata.authenticationAlg = UAF_ALG_SIGN_SECP256R1_ECDSA_SHA256_RAW;
     
     //init scheme
     memcpy((ak_byte_t *)(*pAKInfo[*count]).scheme, "UAFV1TLV", sizeof(ASSERTION_SCHEME_SIZE));

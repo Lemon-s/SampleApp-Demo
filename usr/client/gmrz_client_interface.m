@@ -6,6 +6,8 @@
 //  Copyright © 2016年 lenovo. All rights reserved.
 //
 
+//#define DELETE_CACHE
+
 #import "gmrz_client_interface.h"
 
 #include "uaf_ak_defs.h"
@@ -63,6 +65,25 @@ static BOOL isSimulator = NO;
 
 +(OSStatus)process:(NSString *)FidoIn DoFido:(op)DoFido Methods:(methods)Method FidoOut:(NSString **)FidoOut
 {
+    
+#ifdef DELETE_CACHE
+    
+    NSString * serviceID = @"4e4e#400a";
+    serviceID = [serviceID stringByAppendingString:@"#"];
+    serviceID =  [serviceID stringByAppendingString:[[NSBundle mainBundle] bundleIdentifier]];
+    
+    //                [disallowlist[i] valueForKeyPath:@"aaid"][0]
+    [gmrz_jv_util_func db_items_delete:serviceID FuncItemIndex:0];
+    
+    serviceID = @"4e4e#400b";
+    serviceID = [serviceID stringByAppendingString:@"#"];
+    serviceID =  [serviceID stringByAppendingString:[[NSBundle mainBundle] bundleIdentifier]];
+    
+    //                [disallowlist[i] valueForKeyPath:@"aaid"][0]
+    [gmrz_jv_util_func db_items_delete:serviceID FuncItemIndex:0];
+
+#endif
+    
     
     //添加此方法，可以传入全部待 解析的数据  还可以传入
     NSString *response = [gmrz_client_interface responseToJsonParsingHeader:FidoIn];
@@ -643,6 +664,7 @@ static BOOL isSimulator = NO;
     
     NSString *client_args;
     NSMutableDictionary *dic;
+    // 生成ASMRequest
     status = [gmrz_json_pkg gmrz_pkg_json_client2asm:FidoIn Jsonout:&client_args dicOut:&dic];
     if (status != SUCCESS) {
         *statuscode = PROTOCOL_ERROR;
