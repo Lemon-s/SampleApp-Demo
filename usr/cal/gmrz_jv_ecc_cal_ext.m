@@ -377,7 +377,7 @@ static gmrz_jv_ecc_cal_ext *sharedObj = nil;
     
     
     // Retrieve the key from the keychain.  No authentication is needed at this point.
-    SecKeyRef publicKey = [self setPublicRef:priId pubId:pubId];
+    SecKeyRef publicKey = [self setPublicRef:pubId];
     if (!publicKey) {
         status = -1;
     }
@@ -755,7 +755,7 @@ static gmrz_jv_ecc_cal_ext *sharedObj = nil;
 
 
 
--(SecKeyRef )setPublicRef:(NSString *)priId pubId:(NSString *)pubId
+-(SecKeyRef )setPublicRef:(NSString *)pubId
 {
     OSStatus status = noErr;
     

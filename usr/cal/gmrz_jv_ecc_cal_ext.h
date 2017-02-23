@@ -100,7 +100,7 @@
 
 -(OSStatus)deleteKeyAsync_ios9:(NSString *)priId pubId:(NSString *)pubId;
 
--(SecKeyRef )setPublicRef:(NSString *)priId pubId:(NSString *)pubId;
+-(SecKeyRef )setPublicRef:(NSString *)pubId;
 -(NSData *)setPublicData:(NSString *)priId pubId:(NSString *)pubId;
 
 

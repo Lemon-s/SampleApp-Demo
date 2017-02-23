@@ -162,7 +162,7 @@ extern HttpConnection* gHttpConnection;
                 return;
             }
             
-            
+                NSLog(@"FIDO Server response is %@", response);
 
             
             

@@ -824,7 +824,7 @@ static BOOL isSimulator = NO;
     else if((status == 0 && checkmatadatamode == 4)|| (status == 0 && checkmatadatamode == 6))
     {
         args.authenticatorID = 2;
-        NSLog(@"you can reg 4e4e#400a");
+        NSLog(@"you can reg 4e4e#400b");
     }
     else
     {
@@ -846,7 +846,7 @@ static BOOL isSimulator = NO;
     
     args.username.pData =  (ak_byte_t *)[[dicRegeister valueForKeyPath:@"args.username"] UTF8String];
     args.attestationType = (ak_word_t)[dicRegeister valueForKeyPath:@"args.attestationType"];
-    args.attestationType = 15880;
+    args.attestationType = TAG_ATTESTATION_BASIC_SURROGATE;
     
     memset(pResponse, 0x0, MALLOC_SIZE);
     pResponseLength = MALLOC_SIZE;
